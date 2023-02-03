@@ -21,6 +21,37 @@ h2 {
     display: flex;
 }
 
+/* Header */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.return {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 150ms;
+}
+
+.return:hover,
+.return:active,
+.return:focus {
+    gap: 20px;
+    cursor: pointer;
+}
+
+/* Header end */
+
+/* Content (form) */
 .content {
     flex: 2;
     display: flex;
@@ -30,24 +61,8 @@ h2 {
     padding: 100px;
     background-color: rgb(231, 231, 231);
     color: rgb(29, 29, 29);
-}
-
-.hero {
-    flex: 1 0 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)),url('assets/background-nurb.jpg');
-    background-size: cover;
-    padding-bottom: 100px;
-    z-index: 1;
-}
-
-.tag {
-    color: #fff;
-    padding-top: 20px;
-    font-size: 18px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .formcontent {
@@ -78,6 +93,11 @@ h2 {
     border-radius: 50px;
     font-family: inherit;
     font-size: 15px;
+}
+
+#form label {
+    font-weight: 200;
+    font-size: 18px;
 }
 
 .desc {
@@ -119,4 +139,25 @@ h2 {
 .haveacc a {
     text-decoration: none;
     color: var(--spec-color);
+}
+
+/* End of content (form */
+
+/* Hero */
+.hero {
+    flex: 1 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('assets/background-nurb.jpg');
+    background-size: cover;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.tag {
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
 }
